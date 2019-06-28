@@ -1,0 +1,360 @@
+@font-face
+    font-family: 'Open Sans'
+body
+    background-color: #F5EFE8
+    header
+        .header-brush
+            min-height: 100px
+            background-color: #1f4867
+            border-top: 1px solid #827073
+            margin-top: 20px
+            .row
+                justify-content: space-between
+                .col-lg-6
+                    display: flex
+                    .img-brush
+                        img
+                            margin-left: 35px
+                            padding-top: 26px
+                            width: 170px
+                            display: block
+                        small
+                            font-size: 0.8em
+                            font-weight: 600
+                            opacity: 0.8
+                            display: block
+                            margin-top: 10px 
+                            color: white
+                            margin-left: 30px
+                            padding-bottom: 7px
+                    .catalog-and-contact
+                        position: relative
+                        ul
+                            list-style: none
+                            display: flex
+                            padding: 0
+                            margin: 0
+                            padding-left: 40px
+                            li
+                                padding: 17px
+                                a
+                                    display: inline-block
+                                    cursor: pointer
+                                    text-decoration: none
+                                    color: white
+                                    font-size: 19px
+                                    line-height: 100px
+                                    font-family: 'Open Sans'
+                                    display: flex
+                                    &:hover
+                                        color: darken(white, 12%)
+                                    .caret
+                                        margin-top: 50px
+                                        display: inline-block
+                                        width: 0
+                                        height: 0
+                                        margin-left: 7px
+                                        vertical-align: middle
+                                        border-top: 4px dashed
+                                        border-right: 4px solid transparent
+                                        border-left: 4px solid transparent
+                        .header-nav-menu
+                            display: none
+                            position: absolute
+                            z-index: 5
+                            width: 300px
+                            height: 100px
+                            background-color: white
+                            color: black
+                            top: 95px
+                            left: 50px
+                            border: 1px solid rgba(0,0,0,0.15)
+                            border-radius: 4px
+                            box-shadow: 0 6px 12px rgba(0,0,0,0.175)
+                            ul
+                                list-style: none
+                                display: block
+                                margin: 0
+                                padding: 0
+                                li
+                                    margin: 0
+                                    padding: 0
+                                    a
+                                        font-size: 18px
+                                        display: block
+                                        padding: 3px 20px
+                                        font-weight: normal
+                                        color: #333333
+                                        white-space: nowrap
+                                        text-decoration: none
+                                        line-height: normal
+                                        &:hover
+                                            background-color: #377fb5
+                                            color: black
+                .col-lg-4  
+                    small  
+                        margin-top: 9px
+                        display: block
+                        a
+                            display: block
+                            margin-right: 20px
+                            text-align: right
+                            text-decoration: none
+                            color: white
+                            opacity: 0.8
+                            &:hover
+                                color: darken(white, 12%)
+                    form
+                        width: 280px
+                        float: right
+                        .input-group
+                            margin-top: 30px
+                            display: flex
+                            #input-tx
+                                border: none
+                                outline: none
+                                padding: 6px 12px
+                                border-top-left-radius: 16px
+                                border-bottom-left-radius: 16px
+                            .input-group-btn
+                                input
+                                    border: none
+                                    padding: 0px 12px
+                                    outline: none
+                                    border-top-right-radius: 16px
+                                    border-bottom-right-radius: 16px
+                                    height: 100%
+                                    font-family: 'Open Sans'
+                                    color: #333333
+                                    background-image: linear-gradient(to bottom, #fff 0%, #e0e0e0 100%)
+                                    &:hover
+                                        background-image: none
+        .header-home
+            background-color: white
+            .row
+                border-top: 1px solid #BCBCBC
+                background-color: #377fb5
+                .col-md-2, .col-3, .col-md-4, .col-md-5
+                    font-size: .9em
+                    padding: 10px 20px
+                    color: white
+                    a
+                        color: white
+            .mobile-nav
+                display: none
+                background-color: transparent
+                width: 35px
+                height: 30px
+                margin-left: 10px
+                outline: none
+                box-shadow: none
+                border: 1px solid #777
+                margin-top: 20px
+                transition: opacity 1.3s
+                hr
+                    align-items: center
+                    background-color: #777
+                    margin: auto
+                    &:after
+                        display: block
+                        background-color: #777
+                        width: 21px
+                        height: 1px
+                        border: none
+                        content: ' '
+                        position: relative
+                        top: -8px
+                    &:before
+                        display: block
+                        background-color: #777
+                        width: 21px
+                        height: 1px
+                        border: none
+                        content: ' '
+                        position: relative
+                        bottom: -5px
+            .mobile-nav-menu
+                display: none
+                background-color: white
+                .mobile-nav-ul
+                    margin: 0
+                    padding: 0
+                    li
+                        .mobile-span,a
+                            font-size: 14px
+                            color: #827073
+                            text-decoration: none
+                            display: block
+                            color: #827073
+                            padding: 20px 15px 15px 15px
+                            border-bottom: 1px solid #EEE
+                        .caret
+                            display: inline-block
+                            width: 0
+                            height: 0
+                            margin-left: 2px
+                            vertical-align: middle
+                            border-top: 4px dashed
+                            border-right: 4px solid transparent
+                            border-left: 4px solid transparent
+                    .ul-first-mobile, .ul-twelve-mobile
+                        list-style: none
+                        display: none
+    main
+        .container
+            background-color: white
+            .main-area
+                padding-top: 20px
+                .block-side-nav
+                    padding-left: 0
+                    ul
+                        list-style: none
+                        margin: 0
+                        padding: 0
+                        li
+                            a
+                                font-size: .9em
+                                color: #827073
+                                text-decoration: none
+                                display: block
+                                padding: 20px 15px 15px 30px
+                                border-bottom: 1px solid #EEE
+                            .active
+                                color: black
+                                background-color: #c9dfef
+                                .blocklooking
+                                        img
+                                            display: block
+                                            padding-top: 10px
+                                            width: 111px
+                                            height: 50px
+                            &:hover
+                                background-color: #c9dfef
+                        .last
+                            &:hover
+                                background-color: white
+                .col-md-8, .col-md-12
+                    .home
+                        padding-bottom: 20px
+                        .row
+                            padding-left: 20px
+                            .page-header
+                                width: 100%
+                                padding-bottom: 9px
+                                margin: 40px 0 20px
+                                border-bottom: 1px solid #eeeeee
+                                h1
+                                    color: #827073
+                                    font-weight: normal
+                                    line-height: 1.25em
+                                    font-size: 36px
+                            ul
+                                list-style: disc
+                                font-size: 14px
+                                color: #333333 
+                                margin-bottom: 10px
+                            p
+                                width: 100%
+                                display: block
+                                margin: 0 0 10px
+                                margin-top: 10px
+                                font-weight: 400
+                                font-size: 14px
+                                color: #333333
+                                strong
+                                    font-weight: bold
+                                    color: #333333
+                                    line-height: 1.428571429
+                                    display: block
+                                span
+                                    display: block
+                                    width: 100%
+                            .last-parag
+                                padding-top: 30px
+                                padding-bottom: 30px
+                            h4
+                                display: block
+                                font-weight: normal
+                                line-height: 1.25em
+                                font-size: 18px
+                                margin-top: 10px
+
+                            h3
+                                width: 100%
+                                display: block
+                                color: #377fb5
+                                font-weight: normal
+                                line-height: 1.25em
+                                font-size: 24px
+                                margin-top: 20px
+                                margin-bottom: 10px
+                            a
+                                display: block
+                                color: #337ab7
+                                font-size: 14px
+                                line-height: 1.428571429
+                            .first
+                                width: 164px
+                                height: 62px
+                    .cont_last
+                        padding-bottom: 100px  
+                .about-right
+                    padding-right: 40px  
+
+
+    footer
+        .container
+            background-color: #EDE9DC
+            .row
+                .col-sm-5
+                    ul
+                        list-style: none
+                        margin: 0
+                        margin-bottom: 10px
+                        margin-top: 10px
+                        display: flex
+                        justify-content: space-between
+                        flex-wrap: wrap
+                        li
+                            a
+                                color: #827073
+                                font-size: 14px
+                    small
+                        display: block
+                        margin-top: 14px
+                        box-sizing: border-box
+                        font-size: 85%
+                        color: #777
+                .col-sm-2
+                    small
+                        padding: 15px
+                        display: block
+                        text-align: right
+                        font-size: 85%
+                        color: #777
+                        font-family: 'Open Sans'
+                .col-sm-8
+                    display: flex
+                    flex-wrap: wrap
+                    small
+                        margin-top: 30px
+                        display: block
+                        padding-left: 40px
+                        font-size: 8.5px
+                        line-height: 1.5em
+                        color: #827073
+                    a
+                        img
+                            display: inline-block
+                            margin-top: 20px
+                            margin-left: 2em
+                            padding-bottom: 30px
+                .col-sm-4
+                    img
+                        margin-top: 10px
+                        float: right
+                        margin-left: 20px
+                        margin-right: 20px
+                        &:last-child
+                            margin-top: 14px
+@import 'media.sass'
